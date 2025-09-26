@@ -8,7 +8,8 @@ const word_meaning = (word) => {
             noun.innerHTML = ''
             verb.innerHTML = ''
             adjective.innerHTML = ''
-            
+            example.innerHTML = ''
+
             console.log(data)
             eee = data[0].word
             main_word.innerHTML = `<p ><i>Word: </i>${eee}</p>`
@@ -34,6 +35,34 @@ const word_meaning = (word) => {
                 eee = data[0].meanings[3].definitions[0].definition
                 adjective.innerHTML = `<p><i>Adjective: </i><br>${eee}</p>`
             }
+
+
+
+
+            
+            // this is bad code for finding the example without using loops
+
+            // if (data[0].meanings[3].definitions[0].definition) {
+            //     eee = data[0].meanings[3].definitions[0].definition[4].example[0]
+            // }
+            
+            // data[0].meanings.forEach(meaning => {
+            //     meaning.definitions.forEach(def => {
+            //         if (def.example) {
+            //             exampleText = def.example; // store the first example found
+            //             adjective.innerHTML = `<p><i>Adjective: </i><br>${exampleText}</p>`
+            //         }
+            //     });
+            // });
+            
+
+
+
+
+
+
+
+
 
             // voice.addEventListener('click',(e)=>{
             //     e.preventDefault()
