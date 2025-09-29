@@ -15,6 +15,10 @@ i {
     font-size: 5rem;
 }
 
+#pronounce {
+    font-weight: bold;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
 
 
 body {
@@ -29,7 +33,8 @@ body {
 }
 
 #img {
-    background: center / cover no-repeat url(https://images.pexels.com/photos/9247605/pexels-photo-9247605.jpeg);
+    /* background: center / cover no-repeat url(https://images.pexels.com/photos/159581/dictionary-reference-book-learning-meaning-159581.jpeg); */
+    background: center / cover no-repeat url(background.jpeg);
     width: 100vw;
     height: 25vh;
     filter: grayscale(1);
@@ -37,10 +42,11 @@ body {
 
 section {
     width: 50vw !important;
-    margin:auto;
+    margin: auto;
     padding-left: 0px;
     padding-right: 0px;
 }
+
 @media only screen and (max-width: 600px) {
     #ico {
         height: 75px;
@@ -76,7 +82,8 @@ footer {
     padding: 10px 0px;
     margin: auto;
 }
-::selection{
-    background:black !important;
-    color:white;
+
+::selection {
+    background: black !important;
+    color: white;
 }

@@ -71,6 +71,7 @@ const word_meaning = (word) => {
             // })
         });
 }
+
 submit.addEventListener('click', (e) => {
     e.preventDefault()
     word_meaning(word.value)
